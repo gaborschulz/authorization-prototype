@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 USER_POLICY = [
     {
-        "Sid": "Blabla",
+        "Sid": "UserPolicy1",
         "Effect": "Deny",
         "Action": "footprint:getlist|footprint:getitem",
         "Resource": "kamId:94",
@@ -14,13 +14,13 @@ USER_POLICY = [
 
 ROLE_POLICY = [
     {
-        "Sid": "AllowBlabla",
+        "Sid": "RolePolicy1",
         "Effect": "Allow",
         "Action": "footprint:getlist|footprint:getitem",
         "Resource": "countryid:08.*|globalAccountId:900",
     },
     {
-        "Sid": "AllowComplex",
+        "Sid": "RolePolicy2",
         "Effect": "Deny",
         "Action": "footprint:getlist|footprint:getitem",
         "Resource": "(?=.*countryid:070)(?=.*globalaccountid:901)",

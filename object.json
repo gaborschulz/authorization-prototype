@@ -1,16 +1,12 @@
 {
-    "footprintItemMasterId": 49621,
-    "footprintItemMasterName": "Test customer",
+    "itemMasterId": 49621,
+    "itemMasterName": "Test customer",
     "countryId": "070",
     "customerId": "7121.738904",
     "globalAccountId": "900",
     "salesChannelId": "480",
     "storeFormatId": 3,
     "kamId": 93,
-    "ikamId": 292,
-    "lkamId": 0,
     "headquarterComment": null,
-    "contactPerson": null,
-    "footprintItemFact": {
-    }
-  }
+    "contactPerson": null
+}
