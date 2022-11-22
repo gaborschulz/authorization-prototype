@@ -23,8 +23,6 @@ can be written in JSON.
 To find our more about how this prototype works, feel free to check out my related blog post:
 [blog.gaborschulz.com/advanced-authorization](blog.gaborschulz.com/advanced-authorization)
 
-# License
+## Copyright
 
-MIT
-
-See LICENSE.md for more details.
+Copyright Gabor Schulz, 2022
