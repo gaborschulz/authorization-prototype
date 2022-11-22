@@ -1,4 +1,4 @@
-# Authorization prototype project
+# authorization-prototype
 
 [![python: 3.10](https://img.shields.io/badge/python-3.10-brightgreen)](https://python.org)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)
