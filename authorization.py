@@ -1,3 +1,4 @@
+"""Authorization prototype"""
 import json
 import re
 from datetime import datetime, timedelta
@@ -29,7 +30,7 @@ ROLE_POLICY = [
 
 def get_object() -> dict:
     """Get object"""
-    with open('object.json', 'r', encoding='utf-8') as fp:
+    with open('object.json', 'r', encoding='utf-8') as fp:  # pylint: disable=invalid-name
         return json.load(fp)
 
 
@@ -71,7 +72,7 @@ def authorize(action: str, obj: dict, policy: list) -> tuple:
 
     allowed_by_action = [x for x in allowed_by_resource if x['Action'].search(action)]
     if allowed_by_action:
-        authorized = True, allowed_by_action
+        authorized = True, allowed_by_action  # type: ignore
 
     return authorized, None
 
@@ -86,7 +87,7 @@ def main():
     policy = [*USER_POLICY, *ROLE_POLICY]
 
     authorized = False, None
-    for i in range(iterations):
+    for _ in range(iterations):
         authorized = authorize(action, footprint, policy)
 
     end = datetime.now()
